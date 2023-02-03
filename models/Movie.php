@@ -6,16 +6,14 @@ class Movie
     public $title;
     public $director;
     public $year_of_release;
-    public $plot;
     public $genre;
 
     //costruttore
-    public function __construct($_title, $_director, $_year_of_release, $_plot, $_genre)
+    public function __construct($_title, $_director, $_year_of_release, $_genre)
     {
         $this->title = $_title;
         $this->director = $_director;
         $this->year_of_release = $_year_of_release;
-        $this->plot = $_plot;
         $this->genre = $_genre;
     }
     //metodi
@@ -24,3 +22,9 @@ class Movie
         return $this->title;
     }
 }
+
+$starWars = new Movie('Star Wars', 'George Lucas', 1977, 'Sci-fi');
+var_dump($starWars);
+
+$lotr = new Movie('The Lord Of The Rings', 'Peter Jackson', 2001, 'Epic fantasy');
+var_dump($lotr);
