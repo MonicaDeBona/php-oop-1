@@ -18,7 +18,6 @@ class Movie
         $this->plot = $_plot;
         $this->genre = $_genre;
     }
-
     //metodi
     public function getTitle()
     {
