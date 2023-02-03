@@ -8,4 +8,13 @@ class Movie
     public $year_of_release;
     public $plot;
     public $genre;
+
+    public function __construct($_title, $_director, $_year_of_release, $_plot, $_genre)
+    {
+        $this->title = $_title;
+        $this->director = $_director;
+        $this->year_of_release = $_year_of_release;
+        $this->plot = $_plot;
+        $this->genre = $_genre;
+    }
 }
