@@ -17,14 +17,13 @@ class Movie
         $this->genre = $_genre;
     }
     //metodi
-    public function getTitle()
+    public function getMovie()
     {
-        return $this->title;
+        return '<div class="movie-card">'
+            . "<h3> $this->title </h3>"
+            . "<p> $this->director </p>"
+            . "<p> $this->year_of_release </p>"
+            . "<p> $this->genre </p>"
+            . '</div>';
     }
 }
-
-$starWars = new Movie('Star Wars', 'George Lucas', 1977, 'Sci-fi');
-var_dump($starWars);
-
-$lotr = new Movie('The Lord Of The Rings', 'Peter Jackson', 2001, 'Epic fantasy');
-var_dump($lotr);
